@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
@@ -120,10 +120,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp "Whatsap-${{ github.run_number }}.apk" "Whatsap-${{ github.ref_name }}.apk"
-          gh release create "${{ github.ref_name }}" "Whatsap-${{ github.ref_name }}.apk" \
-            --repo "${{ github.repository }}" \
-            --title "Whatsap ${{ github.ref_name }}" \
-            --generate-notes
+          # Release made on the website first? Just attach the APK to it.
+          if gh release view "${{ github.ref_name }}" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release upload "${{ github.ref_name }}" "Whatsap-${{ github.ref_name }}.apk" --repo "${{ github.repository }}" --clobber
+            gh release edit "${{ github.ref_name }}" --repo "${{ github.repository }}" --draft=false
+          else
+            gh release create "${{ github.ref_name }}" "Whatsap-${{ github.ref_name }}.apk" \
+              --repo "${{ github.repository }}" \
+              --title "Whatsap ${{ github.ref_name }}" \
+              --generate-notes
+          fi
 
       # On failure: put the errors at the top of the run's Summary page, ready
       # to copy, and keep the full logs as a downloadable "build-logs" file.
