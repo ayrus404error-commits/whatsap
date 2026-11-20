@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Your picture shrunk to the part of the icon the phone actually shows, so the
+     whole picture is visible instead of zoomed in (launchers hide the outer ~1/6). -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/chat_icon_custom"
+    android:inset="16.7%" />

@@ -1,0 +1,27 @@
+# Build output
+android/.gradle/
+android/build/
+android/app/build/
+android/app/libs/wa.aar
+android/app/libs/*-sources.jar
+android/local.properties
+*.apk
+*.aab
+*.log
+
+# Signing keys and secrets — never commit these
+*.jks
+*.keystore
+*.p12
+keystore.properties
+.env
+
+# Go
+bridge/vendor/
+
+# Editors / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+deps/

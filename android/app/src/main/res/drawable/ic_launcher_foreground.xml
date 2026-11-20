@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A soft, pearly speech bubble with a short tail at the lower left. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- soft shadow -->
+    <path android:pathData="M55,35 C70.5,35 82,44.4 82,56.5 C82,68.6 70.5,78 55,78 C51.6,78 48.4,77.6 45.5,76.8 L38,82.5 C37.2,83 36.3,82.3 36.7,81.4 L39.3,74.3 C32.4,70.2 28,63.8 28,56.5 C28,44.4 39.5,35 55,35 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="55" android:centerY="60" android:gradientRadius="34">
+                <item android:offset="0.6" android:color="#40702A6E" />
+                <item android:offset="1" android:color="#00702A6E" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- bubble body -->
+    <path android:pathData="M54,30 C69.5,30 81,39.4 81,51.5 C81,63.6 69.5,73 54,73 C50.6,73 47.4,72.6 44.5,71.8 L37,77.5 C36.2,78 35.3,77.3 35.7,76.4 L38.3,69.3 C31.4,65.2 27,58.8 27,51.5 C27,39.4 38.5,30 54,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="54" android:startY="30" android:endX="54" android:endY="78">
+                <item android:offset="0" android:color="#FFFDF6FB" />
+                <item android:offset="0.55" android:color="#FFF5E6F3" />
+                <item android:offset="1" android:color="#FFF7A9D2" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- pink glow inside the lower edge -->
+    <path android:pathData="M54,30 C69.5,30 81,39.4 81,51.5 C81,63.6 69.5,73 54,73 C38.5,73 27,63.6 27,51.5 C27,39.4 38.5,30 54,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="56" android:centerY="47" android:gradientRadius="30">
+                <item android:offset="0.55" android:color="#00FFFFFF" />
+                <item android:offset="1" android:color="#55F48CC4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- glossy highlight -->
+    <path android:pathData="M54,33.5 C64,33.5 72.5,38 75.5,44.5 C69,40.5 61.5,39 54,39 C46.5,39 39,40.5 32.5,44.5 C35.5,38 44,33.5 54,33.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="54" android:startY="33" android:endX="54" android:endY="45">
+                <item android:offset="0" android:color="#CCFFFFFF" />
+                <item android:offset="1" android:color="#00FFFFFF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

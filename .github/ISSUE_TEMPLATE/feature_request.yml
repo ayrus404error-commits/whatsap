@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest something new
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the feature and why it helps. Screenshots of how WhatsApp on iPhone does it are welcome.
+    validations:
+      required: true

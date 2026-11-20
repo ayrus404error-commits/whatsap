@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="512" height="512">
+  <title>Whatsap</title>
+  <defs>
+    <clipPath id="sq"><rect x="18" y="18" width="72" height="72" rx="16.5"/></clipPath>
+    <linearGradient id="bgx" x1="0" y1="0" x2="108" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F2C9A8"/><stop offset="0.5" stop-color="#8EC5F0"/><stop offset="1" stop-color="#B27BEA"/>
+    </linearGradient>
+    <linearGradient id="bgy" x1="0" y1="20" x2="0" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F07C8E" stop-opacity="0"/><stop offset="0.6" stop-color="#EE8296" stop-opacity="0.6"/><stop offset="1" stop-color="#E77394"/>
+    </linearGradient>
+    <radialGradient id="bgr" cx="18" cy="18" r="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.33"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sh" cx="55" cy="60" r="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0.6" stop-color="#702A6E" stop-opacity="0.25"/><stop offset="1" stop-color="#702A6E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="54" y1="30" x2="54" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDF6FB"/><stop offset="0.55" stop-color="#F5E6F3"/><stop offset="1" stop-color="#F7A9D2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="56" cy="47" r="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#F48CC4" stop-opacity="0.33"/>
+    </radialGradient>
+    <linearGradient id="hi" x1="54" y1="33" x2="54" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect x="0" y="0" width="108" height="108" fill="url(#bgx)"/>
+    <rect x="0" y="0" width="108" height="108" fill="url(#bgy)"/>
+    <rect x="0" y="0" width="108" height="108" fill="url(#bgr)"/>
+    <path fill="url(#sh)" d="M55,35 C70.5,35 82,44.4 82,56.5 C82,68.6 70.5,78 55,78 C51.6,78 48.4,77.6 45.5,76.8 L38,82.5 C37.2,83 36.3,82.3 36.7,81.4 L39.3,74.3 C32.4,70.2 28,63.8 28,56.5 C28,44.4 39.5,35 55,35 Z"/>
+    <path fill="url(#body)" d="M54,30 C69.5,30 81,39.4 81,51.5 C81,63.6 69.5,73 54,73 C50.6,73 47.4,72.6 44.5,71.8 L37,77.5 C36.2,78 35.3,77.3 35.7,76.4 L38.3,69.3 C31.4,65.2 27,58.8 27,51.5 C27,39.4 38.5,30 54,30 Z"/>
+    <path fill="url(#glow)" d="M54,30 C69.5,30 81,39.4 81,51.5 C81,63.6 69.5,73 54,73 C38.5,73 27,63.6 27,51.5 C27,39.4 38.5,30 54,30 Z"/>
+    <path fill="url(#hi)" d="M54,33.5 C64,33.5 72.5,38 75.5,44.5 C69,40.5 61.5,39 54,39 C46.5,39 39,40.5 32.5,44.5 C35.5,38 44,33.5 54,33.5 Z"/>
+  </g>
+</svg>
